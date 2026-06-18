@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+var vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:Oguzhan Kocuk\nN:Kocuk;Oguzhan;;;\nTITLE:Kurucu Ortak\nORG:Kocukoglu Kamera ve Guvenlik Sis Elek San Tic Ltd Sti\nTEL;TYPE=CELL:+905325906201\nEND:VCARD";
+var blob = new Blob([vcard], {type: "text/vcard"});
+window.location.href = URL.createObjectURL(blob);
+</script>
+</head>
+<body><p>Yükleniyor...</p></body>
+</html>
