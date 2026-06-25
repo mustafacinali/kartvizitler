@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+var vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:Mv. Prof. Dr. Nazım Elmas\nN:Elmas;Nazım;;;\nTITLE:Milletvekili - Prof. Dr.\nTEL;TYPE=CELL:+905425175588\nEND:VCARD";
+function toBase64(str) {
+    var bytes = new TextEncoder().encode(str);
+    var binary = '';
+    bytes.forEach(function(b) { binary += String.fromCharCode(b); });
+    return btoa(binary);
+}
+window.location.href = "data:text/vcard;charset=utf-8;base64," + toBase64(vcard);
+</script>
+</head>
+<body><p>Yükleniyor...</p></body>
+</html>
