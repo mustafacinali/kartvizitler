@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+var vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:Çağrı Unat\nN:Unat;Çağrı;;;\nTEL;TYPE=CELL:+905324662829\nEND:VCARD";
+var blob = new Blob([vcard], {type: "text/vcard"});
+window.location.href = URL.createObjectURL(blob);
+</script>
+</head>
+<body><p>Yükleniyor...</p></body>
+</html>
