@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+var vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:Hasan Bilgehan\nN:Bilgehan;Hasan;;;\nTEL;TYPE=CELL:+905057775407\nEND:VCARD";
+function toBase64(str) {
+    var bytes = new TextEncoder().encode(str);
+    var binary = '';
+    bytes.forEach(function(b) { binary += String.fromCharCode(b); });
+    return btoa(binary);
+}
+window.location.href = "data:text/vcard;charset=utf-8;base64," + toBase64(vcard);
+</script>
+</head>
+<body><p>Yükleniyor...</p></body>
+</html>
