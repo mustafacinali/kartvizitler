@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+var vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:Çağrı Unat\nN:Unat;Çağrı;;;\nTEL;TYPE=CELL:+905324662829\nEND:VCARD";
+var encoded = btoa(unescape(encodeURIComponent(vcard)));
+window.location.href = "data:text/vcard;charset=utf-8;base64," + encoded;
+</script>
+</head>
+<body><p>Yükleniyor...</p></body>
+</html>
